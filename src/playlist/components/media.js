@@ -6,16 +6,16 @@ class Media extends Component {
     state = {
         author: 'Mauricio Sanchez'
     }
-    handleClick= (event)=> {
-        // console.log(this.props.image); 
-        this.setState({
-            author: 'Leonidas Esteban',
-        })   
-    }
+    // handleClick= (event)=> {
+    //     // console.log(this.props.image); 
+    //     // this.setState({
+    //     //     author: 'Leonidas Esteban',
+    //     // })   
+    // }
 
     render() {
     return (
-      <div className="Media" onClick={this.handleClick}>
+      <div className="Media" onClick={this.props.handleClick}>
         <div className= "Media-cover">
           <img className="Media-image" src={this.props.cover} alt="" width={260} height={160} />
           <h3 className="Media-title">{this.props.title}</h3>
